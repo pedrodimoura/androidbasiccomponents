@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AulaViews</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="spinner_array">
+        <item>Select Planet</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="auto_complete_text_array">
+        <item>contato@yahoo.com.br</item>
+        <item>contato@cesar.edu.br</item>
+        <item>contato@fafica-pe.edu.br</item>
+    </string-array>
+
+    <string name="button_progress_dialog">P Dialog</string>
+    <string name="button_progress_bar">P Bar</string>
+    <string name="button_alert_dialog">A Dialog</string>
+
+    <string name="progress_dialog_title">Title</string>
+    <string name="progress_dialog_message">Message</string>
+
+    <string name="button_positive">Positive</string>
+    <string name="button_negative">Negative</string>
+
+</resources>

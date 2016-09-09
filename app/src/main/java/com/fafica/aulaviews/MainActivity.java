@@ -81,38 +81,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // End AutoCompleteTextView
 
 
+        // Custom Spinner
         this.mSpinnerCustom = (Spinner) findViewById(R.id.spinnerCustom);
         this.mSpinnerCustom.setOnItemSelectedListener(MainActivity.this);
 
         this.mSpinnerCustomAdapter = new SpinnerCustomAdapter(MainActivity.this);
         this.mSpinnerCustom.setAdapter(this.mSpinnerCustomAdapter);
+        // End Custom Spinner
 
+        // ProgressDialog
         this.mButtonProgressDialog = (Button) findViewById(R.id.buttonProgressDialog);
         this.mButtonProgressDialog.setOnClickListener(this);
+        // End ProgressDialog
+        // Ver método onClick
 
         this.mButtonProgressBar = (Button) findViewById(R.id.buttonProgressBar);
         this.mButtonProgressBar.setOnClickListener(this);
 
+        // ProgressBar
         this.mProgressBar = (ProgressBar) findViewById(R.id.progressBar);
+        // End ProgressBar
+        // Ver método onClick
 
+        // AlertDialog
         this.mButtonAlertDialog = (Button) findViewById(R.id.buttonAlertDialog);
         this.mButtonAlertDialog.setOnClickListener(this);
+        // End AlertDialog
+        // Ver método onClick
 
-
+        // ListView
         this.mListView = (ListView) findViewById(R.id.listView);
 
+        // ListView Simples
 //        this.mArrayAdapterListView = new ArrayAdapter<>(
 //                MainActivity.this,
 //                android.R.layout.simple_list_item_1,
 //                getResources().getStringArray(R.array.spinner_array)
 //        );
+        // End ListView Simples
 
+        // Custom ListView
         this.mListViewCustomAdapter = new ListViewCustomAdapter(
                 MainActivity.this,
                 getResources().getStringArray(R.array.spinner_array)
         );
+        // End Custom ListView
 
+        // Adapter Simple ListView
 //        this.mListView.setAdapter(this.mArrayAdapterListView);
+
+        // Adapter Custom ListView
         this.mListView.setAdapter(mListViewCustomAdapter);
 
     }
